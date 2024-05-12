@@ -1,0 +1,318 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/dom-to-image/2.6.0/dom-to-image.min.js"
+      integrity="sha512-01CJ9/g7e8cUmY0DFTMcUw/ikS799FHiOA0eyHsUWfOetgbx/t6oV4otQ5zXKQyIrQGTHSmRVPIgrgLcZi/WMA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"></script>
+    <title>Annapurna Leaderboard</title>
+
+    <link rel="stylesheet" href="screenshot-styles.css" />
+    <link rel="stylesheet" href="main-styles.css" />
+  </head>
+  <body>
+    <!--MAIN CONTAINER-->
+    <div class="main-container">
+      <!--LEFT-->
+      <div class="left">
+        <!--BRAND LOGO-->
+        <img class="brand-logo" src="assets/brand-logo.png" alt="brand-logo" />
+        <!--LEFT BACKGROUND-->
+        <div class="left-background">
+          <!--CIRCLE-->
+          <div class="circle"></div>
+        </div>
+        <!--GLASS BOX-->
+        <div class="glassBox"></div>
+        <!--BRAND NAME-->
+        <span class="brand-name">Annapurna <strong>Leaderboard.</strong></span>
+      </div>
+      <!--RIGHT-->
+      <div class="right">
+        <!--INFO CONTAINER-->
+        <div class="info-container">
+          <!--SPINNER CONTAINER-->
+          <div class="spinner-container">
+            <!--SPINNER WRAPPER-->
+            <div class="spinner-wrapper">
+              <!--SPINNER-->
+              <div class="spinner"></div>
+              <!--CHECK MARK-->
+              <img src="assets/check-mark.png" alt="done" class="check-mark" />
+              <!--CROSS MARK-->
+              <img src="assets/cross-mark.png" alt="done" class="cross-mark" />
+            </div>
+          </div>
+          <!--INFO-->
+          <span class="info info-animation-in"
+            >Please wait, while preparing things.</span
+          >
+        </div>
+      </div>
+    </div>
+    <!--CANVAS CONTAINER-->
+    <div class="canvas-container">
+      <!--CAPTURE CONTAINER-->
+      <div id="capture" class="screenshot-capture-container">
+        <!--BRAND LOGO-->
+        <img
+          src="assets/brand-logo-dark.png"
+          alt="brand-logo"
+          class="screenshot-brand-logo" />
+        <!--CONTENT CONTAINER-->
+        <div class="screenshot-content-container">
+          <div class="screenshot-leaderboard-crown-container">
+            <span class="screenshot-state-name" id="state-name"></span>
+            <img
+              class="screenshot-leaderboard-crown"
+              src="assets/crown.png"
+              alt="leaderboard-crown" />
+          </div>
+
+          <div class="screenshot-score-container">
+            <div class="screenshot-score-wrapper">
+              <div class="screenshot-left-container">
+                <span class="screenshot-leaderboard-name">FCO Leaderboard</span>
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-1.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="fco-rank-one-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="fco-rank-one-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-2.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="fco-rank-two-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="fco-rank-two-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-3.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="fco-rank-three-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="fco-rank-three-amount"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screenshot-right-container">
+                <span class="screenshot-leaderboard-name">BM Leaderboard</span>
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-1.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="bm-rank-one-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="bm-rank-one-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-2.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="bm-rank-two-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="bm-rank-two-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-3.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="bm-rank-three-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="bm-rank-three-amount"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="screenshot-score-wrapper">
+              <div class="screenshot-left-container">
+                <span class="screenshot-leaderboard-name">UM Leaderboard</span>
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-1.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="um-rank-one-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="um-rank-one-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-2.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="um-rank-two-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="um-rank-two-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-3.png"
+                      alt="rank-image"
+                      class="screenshot-left-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="um-rank-three-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="um-rank-three-amount"></span>
+                  </div>
+                </div>
+              </div>
+
+              <div class="screenshot-right-container">
+                <span class="screenshot-leaderboard-name">AM Leaderboard</span>
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-1.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="am-rank-one-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="am-rank-one-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-2.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="am-rank-two-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="am-rank-two-amount"></span>
+                  </div>
+                </div>
+
+                <div class="screenshot-leaderboard-content-container">
+                  <div class="screenshot-username-container">
+                    <img
+                      src="assets/rank-3.png"
+                      alt="rank-image"
+                      class="screenshot-right-rank-image" />
+                    <span
+                      class="screenshot-username"
+                      id="am-rank-three-username"></span>
+                  </div>
+
+                  <div class="screenshot-amount-container">
+                    <span
+                      class="screenshot-amount"
+                      id="am-rank-three-amount"></span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!--BUSINESS UPDATE-->
+        <span class="screenshot-business-update" id="business-update"></span>
+      </div>
+    </div>
+    <!--INTERNAL SCRIPT-->
+    <script src="script.js"></script>
+  </body>
+</html>
