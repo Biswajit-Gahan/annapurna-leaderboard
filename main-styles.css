@@ -271,6 +271,7 @@ body {
   }
   .brand-name{
     text-align: center;
+    bottom: 90px;
   }
 
 }
