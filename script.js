@@ -142,7 +142,7 @@ function triggerError(message) {
 }
 
 function getFormattedName({ nameOne, nameTwo = "", rs = false }) {
-  if (!nameOne) return "No Data Found";
+  if (!nameOne) return "";
   if (!rs) return `${nameOne} - ${nameTwo}`;
   return `Rs. ${nameOne}`;
 }
