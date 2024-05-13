@@ -51,18 +51,18 @@
 }
 
 .screenshot-leaderboard-crown {
-  width: 250px;
+  width: 300px;
 }
 
 .screenshot-state-name {
-  top: 103px;
+  top: 123px;
   position: absolute;
-  font-size: 9px;
-  font-weight: 500;
+  font-size: 8px;
+  font-weight: 600;
 }
 
 .screenshot-score-wrapper {
-  margin-top: 25px;
+  margin-top: 15px;
   display: flex;
   justify-content: space-between;
   padding: 0 50px;
@@ -81,6 +81,7 @@
 .screenshot-leaderboard-name {
   font-size: 14px;
   font-weight: 500;
+  text-decoration: underline;
 }
 
 .screenshot-leaderboard-content-container {
@@ -116,11 +117,12 @@
 
 .screenshot-username {
   font-size: 10px;
+  font-weight: 600;
 }
 
 .screenshot-amount-container {
   background-color: #c8c847;
-  width: 50%;
+  width: 75%;
   height: 25px;
   display: flex;
   align-items: center;

@@ -239,12 +239,12 @@ async function captureImage(state) {
 }
 
 async function generateImages() {
+  const currentDate = new Date();
+  const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth()}-${currentDate.getFullYear()}`
   for (const performer of leaderBoardData) {
-    stateNameElement.innerHTML = `${performer.state.toUpperCase()}`;
-    businessUpdateElement.innerHTML = `Business update as of ${new Date()
-      .toLocaleDateString()
-      .split("/")
-      .join("-")}`;
+    stateNameElement.innerHTML = `${performer.state.toUpperCase()} STATE`;
+    businessUpdateElement.innerHTML = `Business update as of ${formattedDate}`;
+    businessUpdateElement.innerHTML = `Business update as of ${formattedDate}`;
 
     fcoRankOneUsernameElement.innerHTML = getFormattedName({
       nameOne: performer.fco.rankOne.username,
@@ -346,6 +346,7 @@ async function generateImages() {
       rs: true,
     });
 
+    await pause(500);
     await captureImage(performer.state);
   }
 }
