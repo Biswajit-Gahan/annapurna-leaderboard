@@ -262,6 +262,7 @@ body {
     position: absolute;
     top: 22%;
     left: 0;
+    padding: 10px;
   }
 
   .brand-logo {
