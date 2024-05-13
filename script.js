@@ -234,7 +234,7 @@ async function captureImage(state) {
   const dataUrl = await domtoimage.toPng(captureElement);
   leaderboardImages.push({
     state,
-    dataUrl,
+    dataUrl: dataUrl.replace("data:image/png;base64,", ""),
   });
 }
 
@@ -428,12 +428,6 @@ async function run() {
 
   // GENERATING LEADERBOARD IMAGES
   uploadDone();
-
-  // PAUSE CODE FOR 2 SECONDS
-  await pause(2000);
-
-  // CLOSING THE WINDOW
-  window.close();
 }
 
 run();
