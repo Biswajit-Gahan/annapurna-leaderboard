@@ -42,6 +42,7 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   display: flex;
+  position: relative;
   /*display: none;*/
 }
 
@@ -225,6 +226,7 @@ body {
 
 .info {
   color: var(--white);
+  text-align: center;
 }
 
 .info-animation-in {
@@ -240,4 +242,35 @@ body {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+@media screen and (max-width: 800px) {
+  .left {
+    width: 100vw;
+  }
+
+  .glassBox {
+    height: 35%;
+  }
+
+  .circle {
+    position: absolute;
+    bottom: 20%;
+  }
+
+  .info-container {
+    position: absolute;
+    top: 22%;
+    left: 0;
+  }
+
+  .brand-logo {
+    left: 50%;
+    transform: translateX(-50%);
+    width: 150px;
+  }
+  .brand-name{
+    text-align: center;
+  }
+
 }
