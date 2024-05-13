@@ -240,7 +240,8 @@ async function captureImage(state) {
 
 async function generateImages() {
   const currentDate = new Date();
-  const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth()}-${currentDate.getFullYear()}`
+  const month = currentDate.getMonth();
+  const formattedDate = `${currentDate.getDate()}-${month < 10 ? `0${month}` : month}-${currentDate.getFullYear()}`
   for (const performer of leaderBoardData) {
     stateNameElement.innerHTML = `${performer.state.toUpperCase()} STATE`;
     businessUpdateElement.innerHTML = `Business update as of ${formattedDate}`;

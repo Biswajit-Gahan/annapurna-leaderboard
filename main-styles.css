@@ -43,7 +43,7 @@ body {
   min-height: 100vh;
   display: flex;
   position: relative;
-  /*display: none;*/
+  display: none;
 }
 
 .left {
