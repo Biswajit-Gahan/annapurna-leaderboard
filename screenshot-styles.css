@@ -80,8 +80,9 @@
 
 .screenshot-leaderboard-name {
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: underline;
+  font-style: italic;
 }
 
 .screenshot-leaderboard-content-container {
@@ -116,12 +117,12 @@
 }
 
 .screenshot-username {
-  font-size: 10px;
+  font-size: 11px;
   font-weight: 600;
 }
 
 .screenshot-amount-container {
-  background-color: #c8c847;
+  background-color: #e8df6c;
   width: 75%;
   height: 25px;
   display: flex;
@@ -133,5 +134,5 @@
 .screenshot-amount {
   font-size: 12px;
   color: #151515;
-  font-weight: 600;
+  font-weight: 900;
 }
