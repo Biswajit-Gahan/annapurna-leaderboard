@@ -241,8 +241,7 @@ async function captureImage(state) {
 async function generateImages() {
   const currentDate = new Date();
   const month = currentDate.getMonth();
-  console.log(month)
-  const formattedDate = `${currentDate.getDate()}-${month < 9 ? `0${month + 1}` : month + 1}-${currentDate.getFullYear()}`
+  const formattedDate = `${currentDate.getDate() - 1}-${month < 9 ? `0${month + 1}` : month + 1}-${currentDate.getFullYear()}`
   for (const performer of leaderBoardData) {
     stateNameElement.innerHTML = `${performer.state === "Business Teams" ? performer.state.toUpperCase() : `${performer.state.toUpperCase()} STATE`}`;
     businessUpdateElement.innerHTML = `Business update as of ${formattedDate}`;
