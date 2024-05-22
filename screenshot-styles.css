@@ -119,6 +119,7 @@
 .screenshot-username {
   font-size: 10px;
   font-weight: 600;
+  text-align: center;
 }
 
 .screenshot-amount-container {

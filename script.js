@@ -363,6 +363,8 @@ async function run() {
   try {
     const response = await fetch(leaderboardDataApiUrl);
     responseData = await response.json();
+    console.log(responseData)
+
 
     if (responseData?.statusCode !== 200) {
       triggerError(
@@ -383,6 +385,10 @@ async function run() {
 
   // SETTING UP DATA OF LEADERBOARD PERFORMERS
   setLeaderboardPerformersData(responseData);
+
+
+
+  // console.log(leaderBoardData)
 
   // PAUSE CODE FOR 4 SECONDS
   await pause(4000);
